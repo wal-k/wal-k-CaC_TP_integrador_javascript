@@ -1,0 +1,18 @@
+#totalAPagar {
+    background-color: #d8f3f3;
+    color: blue;
+    height: 2.5rem;
+
+}
+
+
+.btn {
+    background-color: #96c93e;
+    color: white;
+
+}
+
+.btn:hover {
+    background-color: #96c93e;
+    color: black;
+}
