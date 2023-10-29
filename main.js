@@ -3,7 +3,7 @@ import { calcular_descuentos } from "./modules/calcular_descuentos.js";
 
 console.log("script loaded");
 borrar();
-calcular_descuentos();
+console.log(calcular_descuentos(2,200.0,"trainee"));
 
 
 function enviar(){
