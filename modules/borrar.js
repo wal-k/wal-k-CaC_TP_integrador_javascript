@@ -1,5 +1,4 @@
-function borrar(){ 
-    alert("borrado!");
-};
-
-export {borrar};
+function borrar(){
+    var element = document.getElementById("formTickets");
+     element.reset()
+  }
