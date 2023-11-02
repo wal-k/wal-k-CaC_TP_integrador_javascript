@@ -62,3 +62,13 @@ nav a:visited{
     background: none;
 }
 
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu a, .menu button {
+        margin: 5px 0;
+    }
+}

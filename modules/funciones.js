@@ -43,10 +43,11 @@ function agregarResultado(resultado) {
 
     let parrafo = document.getElementById("totalAPagar");
    
-        parrafo.innerHTML = `<span class="montoTotal">Total a pagar $ ${resultado}</span>`;
+    parrafo.innerHTML = `<span class="montoTotal">Total a pagar $ ${resultado}</span>`;
 
 }
 
 export {calcular_descuentos, validarDatos, agregarResultado};
 
 window.borrar = borrar;
+
