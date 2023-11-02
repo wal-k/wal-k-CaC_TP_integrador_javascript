@@ -1,6 +1,6 @@
 #totalAPagar {
     background-color: #d8f3f3;
-    color: blue;
+    color: rgb(29, 29, 164);
     height: 2.5rem;
 
 }
@@ -15,4 +15,10 @@
 .btn:hover {
     background-color: #96c93e;
     color: black;
+}
+
+.montoTotal{
+    font-weight: bold;
+    font-size: 1rem;
+
 }

@@ -41,9 +41,9 @@ function validarDatos (cantidad, categoria){
 
 function agregarResultado(resultado) {
 
-    let parrafo = document.getElementById('totalAPagar');
+    let parrafo = document.getElementById("totalAPagar");
    
-        parrafo.innerHTML = `<span>"$${resultado}"</span>`;
+        parrafo.innerHTML = `<span class="montoTotal">Total a pagar $ ${resultado}</span>`;
 
 }
 
