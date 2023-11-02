@@ -1,7 +1,5 @@
 footer{
-
     background: linear-gradient(90deg, rgba(28,54,67,1) 0%, rgba(30,81,110,1) 100%);
-    color: white;
 }
 
 footer a{
@@ -11,11 +9,11 @@ footer a{
     margin-right: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    text-decoration: none;
    
 }
 
 footer col{
-
     padding: 8rem !important;
 
 }
