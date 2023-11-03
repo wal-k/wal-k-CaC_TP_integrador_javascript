@@ -24,28 +24,56 @@
                           
             <div class="col p-0">
 
-                <nav class="navbar nabvar-expand-md container-fluid px-5 p-0 fixed-top">
+                  <nav class="navbar navbar-expand-lg navbar-dark px-5 p-0 fixed-top">
+                    <!-- NAV CONTAINER -->
+                    <div class="container-fluid">
+                        <a href="" class="navbar-brand fw-semibold fs-5">
+                            <i><img src="imgs/codoacodo.png" alt=""></i>
+                            <span class="offcanvas-title text-light">Conf Bs As</span>
+                        </a>
+            
+                        <!-- NAV BUTTON  -->
+                        <button class="navbar-toggler px-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                    <span class="navbar-brand" href="#" class="">
-                        <img src="imgs/codoacodo.png" alt="">
-                        <a href="" class="fw-bold"> Conf Bs As</a>
-                    </span>
-    
-                    <div class="menu pl-5">
-                        <a href="#intro"> La conferencia </a>
-                        <a href="#oradores"> Los oradores </a>
-                        <a href="#lugaryfecha"> El lugar y la fecha </a>
-                        <a href="#registro"> Conviertete en orador </a>
-                        <button><a href="comprarTickets.html" target="_blank">Comprar tickets</a></button>
+                        <!-- OFFCANVAS CONTAINER -->
+                        <section class="offcanvas offcanvas-start" id="menuLateral" tabindex="-1">
+                            <div class="offcanvas-header" data-bs-theme="dark">
+                                <a href="" class="navbar-brand fw-semibold fs-5">
+                                    <i><img src="imgs/codoacodo.png" alt=""></i>
+                                    <span class="offcanvas-title text-light">Conf Bs As</span>
+                                </a>
+            
+                                <!-- BOTON PARA CERRAR MENU LATERAL -->
+                                <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+            
+                            <!-- MENU /LINK-->
+                            <div class="offcanvas-body d-flex flex-column justify-content-between px-0">
+                                <ul class="navbar-nav fs-6 justify-content-end">
+                                    <li class="nav-item active p-1 py-md-1"><a href="#intro" class="nav-link active px-1">La conferencia </a></li>
+                                    <li class="nav-item p-1 py-md-1"><a href="#oradores" class="nav-link px-1">Los oradores </a>
+                                    </li>
+                                    <li class="nav-item p-1 py-md-1"><a href="#lugaryfecha" class="nav-link px-1">El lugar y la
+                                            fecha</a></li>
+                                    <li class="nav-item p-1 py-md-1"><a href="#registro" class="nav-link px-1">Conviertete en
+                                            orador</a></li>
+                                    <li class="nav-item p-1 py-md-1"><a href="comprarTickets.html" class="nav-link px-1 link-comprar" target="_blank">Comprar tickets</a></li>
+                                </ul>
+            
+                            </div>
+            
+                        </section>
+            
                     </div>
-    
                 </nav>
 
             </div>         
         
         </div>
     
-        <div class="row" id="intro">
+        <div class="row d-sm-flex" id="intro">
            
             <div class="column p-0 pt-5" id="intro-column">
 
@@ -72,23 +100,22 @@
 
                 <div class="d-none d-md-block w-50 text-end pl-5" id="intro-text-box-md">
                     <h2> Conf Bs As</h2>
-                    <p> Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                    <button type="button" class="btn btn-outline-light m-1">Quiero ser orador</button>     
-                    <button type="button" class="btn btn-success m-1">Comprar tickets</button>     
+                    <p> Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>                   
+                    <a class="btn btn-outline-light m-1" href="#oradores" role="button">Quiero ser orador</a>  
+                    <a class="btn btn-success m-1" href="comprarTickets.html" role="button" target="_blank">Comprar tickets</a>
                 </div>
 
                 <div class="d-block d-md-none text-center pl-5" id="intro-text-box-sm">
                     <h2> Conf Bs As</h2>
                     <p> Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                    <button type="button" class="btn btn-outline-light m-1">Quiero ser orador</button>     
-                    <button type="button" class="btn btn-success m-1">Comprar tickets</button>     
+                    <a class="btn btn-outline-light m-1" href="#oradores" role="button">Quiero ser orador</a>    
+                    <a class="btn btn-success m-1" href="comprarTickets.html" role="button" target="_blank">Comprar tickets</a> 
                 </div>
-                
-
 
             </div>
         </div>
-    
+        <br>
+        <br>        
         <div class="row" id="oradores"> 
            
             <div class="col w-100 text-center pt-2">
@@ -96,7 +123,7 @@
                 <p class="mb-0" style="font-size: small;"> CONOCE A LOS</p> 
                 <h2>ORADORES</h2>
 
-                <div class="container d-sm-flex cards-container justify-content-center w-100 flex">
+                <div class="container d-sm-flex cards-container justify-content-center w-100">
 
                     <div class="card">
 
@@ -177,19 +204,19 @@
     
         <div class="row" id="registro"> 
 
-            <div class="d-none d-md-block col-3"></div>
+            <div class="d d-md-block col-2"></div>
 
-            <div class="col text-left text-md-center">
+            <div class="col text-md-center">
 
                 <div class="text-center">
                     <p class="mb-0 mt-4" style="font-size: small;">CONVIÉRTETE EN UN</p> 
                     <h2>ORADOR</h2>
                 </div>
                
-                <p class=" d-md-block mb-0 mx-1"> Anótate como orador para dar una <a href="https://www.ignitetalks.io" id="charla-link"><abbr title="attribute">charla ignite</abbr></a>. Cuéntanos de qué quieres hablar!</p> 
+                <p class="d-md-block text-center mb-0 mx-1"> Anótate como orador para dar una <a href="https://www.ignitetalks.io" id="charla-link"><abbr title="attribute">charla ignite</abbr></a>. Cuéntanos de qué quieres hablar!</p> 
                 
 
-                <form class="d-none d-md-block" id="form-box">
+                <form class="d-md-block" id="form-box">
 
                     <div class="d-flex p-0">
                         <input type="text" placeholder="Nombre" class="form-control w-50 m-2 " required id="campo_nombre">
@@ -204,30 +231,11 @@
                     
                     </div>
                         
-                </form>
-
-                <form class="d-md-none" id="form-box">
-
-                    <div class="p-0">
-                        <input type="text" placeholder="Nombre" class="form-control w-50 m-2 " required id="campo_nombre">
-                        <input type="text" placeholder="Apellido" class="form-control w-50 m-2" required id="campo_apellido">
-                    </div>
-                    
-                    
-                    <div class="container p-0">
-                        <textarea class="form-control m-0" id="" rows="4" placeholder="Sobre que quieres hablar?" required></textarea>
-                        <p class="text-start" style="font-size: x-small;">Recuerda incluir un título para tu charla</p>
-                        <Button class="btn w-100 mb-2" id="btn-enviar" onclick='enviar()'> Enviar </Button>
-                    
-                    </div>
-                        
-                </form>
-
-                
+                </form>               
 
             </div>
 
-            <div class="d-none d-md-block col-3">
+            <div class="d d-md-block col-2">
 
             </div>
 
